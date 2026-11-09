@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">NotesApp</string>
-    <string name="enter_note_here">Enter note here:</string>
+    <string name="app_title">My Notes</string>
+    <string name="enter_note_here">Write a note…</string>
+    <string name="submit">Submit</string>
+    <string name="add_note">Add note</string>
+
+    <string name="empty_notes_title">No notes yet</string>
+    <string name="empty_notes_subtitle">Tap below to capture your first thought</string>
+
+    <string name="delete_note">Delete note</string>
+    <string name="note_added">Note added</string>
+    <string name="note_deleted">Note deleted</string>
+    <string name="undo">Undo</string>
 </resources>

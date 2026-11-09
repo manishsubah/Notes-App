@@ -1,34 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.NotesApp.NoteCard"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="12dp"
-    android:background="#abcdef">
+    android:layout_marginVertical="@dimen/note_item_margin_vertical">
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="0dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/deletebutton"
-        app:layout_constraintTop_toTopOf="parent"
-        android:padding="12dp"
-        android:textSize="20sp"
-        tools:text="SUBAH"
-        android:textStyle="bold"
-        android:textColor="#0B0B0B"
-        />
+        android:minHeight="@dimen/delete_button_size">
 
-    <ImageView
-        android:id="@+id/deletebutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:src="@drawable/baseline_delete_forever_24"
-        app:layout_constraintTop_toTopOf="@id/text"
-        app:layout_constraintBottom_toBottomOf="@id/text"
-        app:layout_constraintRight_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:padding="@dimen/spacing_md"
+            android:textAppearance="@style/TextAppearance.NotesApp.Body"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/delete_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Remember to finish the UI revamp for NotesApp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/delete_button"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="@dimen/delete_button_size"
+            android:layout_height="@dimen/delete_button_size"
+            android:contentDescription="@string/delete_note"
+            app:icon="@drawable/baseline_delete_forever_24"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="24dp"
+            app:iconTint="@color/error"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="@color/error" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

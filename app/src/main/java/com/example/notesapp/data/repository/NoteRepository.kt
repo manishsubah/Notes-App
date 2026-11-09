@@ -1,7 +1,9 @@
-package com.example.notesapp
+package com.example.notesapp.data.repository
 
 import androidx.lifecycle.LiveData
-import androidx.room.Ignore
+import com.example.notesapp.data.local.NoteDao
+import com.example.notesapp.domain.model.Note
+
 
 class NoteRepository(private val noteDao: NoteDao) {
 

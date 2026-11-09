@@ -1,7 +1,8 @@
-package com.example.notesapp
+package com.example.notesapp.data.local
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import com.example.notesapp.domain.model.Note
 
 
 @Dao
