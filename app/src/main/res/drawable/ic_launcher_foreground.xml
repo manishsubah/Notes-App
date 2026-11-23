@@ -4,6 +4,10 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
+    <!-- Scaled to 84% around the centre so the pass and stub stay inside the 66dp
+         safe circle; circular launcher masks no longer clip the corners. -->
+    <group android:name="safe_zone" android:pivotX="54" android:pivotY="54"
+        android:scaleX="0.84" android:scaleY="0.84">
     <!-- Boarding pass: the capture mark. Splash uses this same drawable. -->
     <path android:fillColor="#000000" android:fillAlpha="0.22" android:pathData="M27.71,36.12H80.29A4.74,4.74 0 0 1 85.03,40.86V71.45A4.74,4.74 0 0 1 80.29,76.19H27.71A4.74,4.74 0 0 1 22.97,71.45V40.86A4.74,4.74 0 0 1 27.71,36.12Z" />
     <path android:fillColor="@color/icon_paper" android:pathData="M27.71,33.96H62.83A3.23,3.23 0 0 0 66.07,37.19V70.81A3.23,3.23 0 0 0 62.83,74.04H27.71A4.74,4.74 0 0 1 22.97,69.30V38.70A4.74,4.74 0 0 1 27.71,33.96Z" />
@@ -18,4 +22,5 @@
     <path android:fillColor="@color/icon_line" android:pathData="M38.16,65.10H52.60A1.40,1.40 0 0 1 54.00,66.50V66.50A1.40,1.40 0 0 1 52.60,67.90H38.16A1.40,1.40 0 0 1 36.76,66.50V66.50A1.40,1.40 0 0 1 38.16,65.10Z" />
     <path android:fillColor="@color/icon_ink" android:fillAlpha="0.55" android:pathData="M65.35,39.39A0.72,0.72 0 1 1 66.79,39.39A0.72,0.72 0 1 1 65.35,39.39ZM65.35,44.26A0.72,0.72 0 1 1 66.79,44.26A0.72,0.72 0 1 1 65.35,44.26ZM65.35,49.13A0.72,0.72 0 1 1 66.79,49.13A0.72,0.72 0 1 1 65.35,49.13ZM65.35,54.00A0.72,0.72 0 1 1 66.79,54.00A0.72,0.72 0 1 1 65.35,54.00ZM65.35,58.87A0.72,0.72 0 1 1 66.79,58.87A0.72,0.72 0 1 1 65.35,58.87ZM65.35,63.74A0.72,0.72 0 1 1 66.79,63.74A0.72,0.72 0 1 1 65.35,63.74ZM65.35,68.61A0.72,0.72 0 1 1 66.79,68.61A0.72,0.72 0 1 1 65.35,68.61Z" />
     <path android:fillColor="@color/icon_ink" android:pathData="M70.81,52.71H74.25V49.26H76.84V52.71H80.29V55.29H76.84V58.74H74.25V55.29H70.81Z" />
+    </group>
 </vector>
