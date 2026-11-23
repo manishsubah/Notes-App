@@ -21,7 +21,7 @@ OWN-WORLD: Cool grey ground, white panels, navy-ink header band, one amber signa
 
 STORY: The owner sees at a glance how many notes are open, writes into the pass at the top, and watches the note land lit at the head of the board. They tick off, pin or swipe away notes and see each one move to its new place rather than vanish.
 
-FIRST VIEWPORT: A navy band holds "My Notes" and the "7 OPEN · 1 DONE" count. A white boarding pass overlaps the band's lower edge, full width minus 16dp: a label line "NEW NOTE", the text field, and an "ENTER TO ADD" hint on the left; a perforation; an 88dp amber ADD stub on the right (the primary action). Below it, a board panel with a fixed column header (TIME · NOTE · STATUS) and section labels PINNED, OPEN, DONE.
+FIRST VIEWPORT: A navy band holds "My Notes", the "7 OPEN · 1 DONE" count and a theme switch (device / light / dark). A white boarding pass overlaps the band's lower edge, full width minus 16dp: a label line "NEW NOTE" and the text field on the left; a perforation; an 88dp amber ADD stub on the right (the primary action). Below it, a board panel with a fixed column header (TIME · NOTE · STATUS) and section labels PINNED, OPEN, DONE.
 
 FORM: Gate Board challenger fused with the product (catalog vernacular-ephemera-boarding-pass-and-gate-board), chosen by the user over the assigned Swatch Strip (grounded #6). seed:656c0ede1eb5f3be
 

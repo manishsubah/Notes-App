@@ -42,12 +42,26 @@
             android:id="@+id/count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="4dp"
             android:textAppearance="@style/TextAppearance.NotesApp.Label"
             android:textColor="@color/on_band_muted"
             app:layout_constraintBaseline_toBaselineOf="@id/title"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/theme_button"
             tools:text="7 open · 1 done" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/theme_button"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="@dimen/touch_target"
+            android:layout_height="@dimen/touch_target"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/theme_title"
+            app:icon="@drawable/ic_contrast"
+            app:iconTint="@color/on_band_muted"
+            app:layout_constraintBottom_toBottomOf="@id/title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/title"
+            app:rippleColor="@color/on_band_muted" />
 
         <!-- The boarding pass: the composer. -->
         <com.google.android.material.card.MaterialCardView
@@ -79,7 +93,7 @@
                     android:paddingStart="@dimen/spacing_md"
                     android:paddingTop="12dp"
                     android:paddingEnd="@dimen/spacing_sm"
-                    android:paddingBottom="12dp">
+                    android:paddingBottom="@dimen/spacing_md">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -123,13 +137,6 @@
                         android:textColorHint="@color/label"
                         android:textCursorDrawable="@null"
                         android:textSize="18sp" />
-
-                    <TextView
-                        android:id="@+id/pass_footer"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/pass_footer_new"
-                        android:textAppearance="@style/TextAppearance.NotesApp.Label" />
                 </LinearLayout>
 
                 <com.example.notesapp.presentation.ui.PerforationView

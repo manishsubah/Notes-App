@@ -252,10 +252,14 @@ Panels have gently rounded corners (10dp); tags and the snackbar are nearly squa
 ## Components
 
 ### Boarding Pass (composer, signature)
-- **Structure:** label line (NEW NOTE, or EDITING · SEQ 007 with a CANCEL text action), the 18sp field (hint "Write a note…", up to 5 lines), a hint (ENTER TO ADD / ENTER TO SAVE), the 16dp perforation, and the 88dp stub.
+- **Structure:** label line (NEW NOTE, or EDITING · SEQ 007 with a CANCEL text action), the 18sp field (hint "Write a note…", up to 5 lines; the keyboard's action key submits), the 16dp perforation, and the 88dp stub. There is no keyboard hint: this is a touch surface.
 - **Stub:** always amber; ADD, or SAVE in edit mode. With an empty pass, tapping it focuses the field and raises the keyboard.
 - **Print-out:** on add, the text moves 14dp down and fades (160ms, standard easing), clears, then rises from 6dp above (160ms, decelerate) while the row drops onto the board.
 - **Edit mode:** happens in the pass; Back or CANCEL exits.
+
+### Theme switch
+- A 48dp icon button (Material Icons Outlined "contrast", `on-band-muted`) at the end of the band's title row opens a popup menu with Use device setting / Light / Dark as single-choice items.
+- The choice is stored on the device and applied at process start (NotesApplication), so there is no flash of the wrong theme. The default is Use device setting.
 
 ### Board Panel
 - **Corner:** 10dp, 1dp `hairline` stroke, `panel` fill, no elevation.

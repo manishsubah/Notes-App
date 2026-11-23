@@ -39,14 +39,14 @@
 
     <!-- Splash -->
     <color name="splash_background">#0E1A2B</color>
-    <color name="splash_icon_tint">#FFFFFF</color>
 
-    <!-- App icon (launcher drawables) -->
-    <color name="icon_bg_start">#3949AB</color>
-    <color name="icon_bg_end">#1A237E</color>
+    <!-- Launcher mark. Not overridden at night, so the home-screen icon stays put. -->
+    <color name="icon_bg_start">#15263D</color>
+    <color name="icon_bg_end">#0A1422</color>
     <color name="icon_paper">#FFFFFF</color>
-    <color name="icon_paper_fold">#E8EAF6</color>
-    <color name="icon_ink">#3F51B5</color>
-    <color name="icon_accent">#FF7043</color>
-    <color name="icon_accent_glow">#33FF7043</color>
+    <color name="icon_lit">#FFF4CC</color>
+    <color name="icon_signal">#F2B705</color>
+    <color name="icon_ink">#0E1A2B</color>
+    <color name="icon_line">#C3CCD7</color>
+    <color name="icon_muted">#9FB0C6</color>
 </resources>

@@ -10,13 +10,17 @@
     <string name="pass_label_new">New note</string>
     <string name="pass_label_edit">Editing · Seq %1$03d</string>
     <string name="pass_hint">Write a note…</string>
-    <string name="pass_footer_new">Enter to add</string>
-    <string name="pass_footer_edit">Enter to save</string>
     <string name="pass_stub_add">Add</string>
     <string name="pass_stub_save">Save</string>
     <string name="pass_cancel">Cancel</string>
     <string name="add_note">Add note</string>
     <string name="save_note">Save note</string>
+
+    <!-- Theme -->
+    <string name="theme_title">Theme</string>
+    <string name="theme_system">Use device setting</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
 
     <!-- Board columns and sections -->
     <string name="column_time">Time</string>

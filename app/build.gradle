@@ -16,6 +16,9 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        // Draw vectors at runtime instead of rasterising them at build time; the build-time
+        // rasteriser cannot resolve @color references (e.g. in the launcher background).
+        vectorDrawables.useSupportLibrary = true
     }
 
     buildTypes {

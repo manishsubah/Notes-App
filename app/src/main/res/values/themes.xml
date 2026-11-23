@@ -9,6 +9,12 @@
         <item name="colorSurface">@color/panel</item>
         <item name="colorOnSurface">@color/ink</item>
         <item name="colorSurfaceVariant">@color/panel_sunken</item>
+        <!-- Menus, popups and other container surfaces use the board's own panel. -->
+        <item name="colorSurfaceContainerLowest">@color/panel</item>
+        <item name="colorSurfaceContainerLow">@color/panel</item>
+        <item name="colorSurfaceContainer">@color/panel</item>
+        <item name="colorSurfaceContainerHigh">@color/panel</item>
+        <item name="colorSurfaceContainerHighest">@color/panel_sunken</item>
         <item name="colorOnSurfaceVariant">@color/label</item>
         <item name="colorOutline">@color/hairline</item>
         <item name="colorSurfaceInverse">@color/inverse_surface</item>
@@ -31,7 +37,7 @@
 
     <style name="Theme.NotesApp.Splash" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/splash_background</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
         <item name="windowSplashScreenAnimationDuration">300</item>
         <item name="postSplashScreenTheme">@style/Theme.NotesApp</item>
     </style>

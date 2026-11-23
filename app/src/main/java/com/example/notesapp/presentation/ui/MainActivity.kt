@@ -58,6 +58,7 @@ class MainActivity : AppCompatActivity(), BoardActions {
         setupEdgeToEdge()
         setupBoard()
         setupPass()
+        binding.themeButton.setOnClickListener { showThemeMenu(it) }
         setupViewModel()
     }
 
@@ -228,7 +229,6 @@ class MainActivity : AppCompatActivity(), BoardActions {
         editing = note
         cancelEditOnBack.isEnabled = true
         binding.passLabel.text = getString(R.string.pass_label_edit, note.id)
-        binding.passFooter.setText(R.string.pass_footer_edit)
         binding.stubText.setText(R.string.pass_stub_save)
         binding.stub.contentDescription = getString(R.string.save_note)
         binding.passCancel.isVisible = true
@@ -242,7 +242,6 @@ class MainActivity : AppCompatActivity(), BoardActions {
         editing = null
         cancelEditOnBack.isEnabled = false
         binding.passLabel.setText(R.string.pass_label_new)
-        binding.passFooter.setText(R.string.pass_footer_new)
         binding.stubText.setText(R.string.pass_stub_add)
         binding.stub.contentDescription = getString(R.string.add_note)
         binding.passCancel.isVisible = false
@@ -301,6 +300,29 @@ class MainActivity : AppCompatActivity(), BoardActions {
     }
 
     // endregion
+
+    /** Device setting, Light or Dark; saved and re-applied at every launch by NotesApplication. */
+    private fun showThemeMenu(anchor: android.view.View) {
+        val popup = androidx.appcompat.widget.PopupMenu(this, anchor)
+        val modes = listOf(
+            ThemePreference.MODE_SYSTEM to R.string.theme_system,
+            ThemePreference.MODE_LIGHT to R.string.theme_light,
+            ThemePreference.MODE_DARK to R.string.theme_dark,
+        )
+        val current = ThemePreference.get(this)
+        modes.forEachIndexed { index, (mode, label) ->
+            popup.menu.add(0, mode, index, label).apply {
+                isCheckable = true
+                isChecked = mode == current
+            }
+        }
+        popup.menu.setGroupCheckable(0, true, true)
+        popup.setOnMenuItemClickListener { item ->
+            ThemePreference.set(this, item.itemId)
+            true
+        }
+        popup.show()
+    }
 
     private fun dp(value: Int): Int = (value * resources.displayMetrics.density).toInt()
 }
