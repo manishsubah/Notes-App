@@ -139,7 +139,7 @@
                         android:textSize="18sp" />
                 </LinearLayout>
 
-                <com.example.notesapp.presentation.ui.PerforationView
+                <com.notes.manishsubah.presentation.ui.PerforationView
                     android:layout_width="@dimen/pass_notch"
                     android:layout_height="match_parent" />
 

@@ -1,4 +1,4 @@
-package com.example.notesapp.presentation.ui
+package com.notes.manishsubah.presentation.ui
 
 import android.content.Context
 import android.graphics.Canvas
@@ -7,7 +7,7 @@ import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
 import androidx.core.content.ContextCompat
-import com.example.notesapp.R
+import com.notes.manishsubah.R
 
 /**
  * The tear line between the pass and its stub: a dashed rule with a semicircular notch

@@ -1,4 +1,4 @@
-package com.example.notesapp.presentation.ui
+package com.notes.manishsubah.presentation.ui
 
 import android.os.Bundle
 import android.text.InputType
@@ -16,13 +16,13 @@ import androidx.core.view.updateLayoutParams
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.notesapp.R
-import com.example.notesapp.databinding.ActivityMainBinding
-import com.example.notesapp.domain.model.Note
-import com.example.notesapp.presentation.adapter.BoardActions
-import com.example.notesapp.presentation.adapter.BoardAdapter
-import com.example.notesapp.presentation.adapter.BoardItem
-import com.example.notesapp.presentation.viewmodel.NoteViewModel
+import com.notes.manishsubah.R
+import com.notes.manishsubah.databinding.ActivityMainBinding
+import com.notes.manishsubah.domain.model.Note
+import com.notes.manishsubah.presentation.adapter.BoardActions
+import com.notes.manishsubah.presentation.adapter.BoardAdapter
+import com.notes.manishsubah.presentation.adapter.BoardItem
+import com.notes.manishsubah.presentation.viewmodel.NoteViewModel
 import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity(), BoardActions {

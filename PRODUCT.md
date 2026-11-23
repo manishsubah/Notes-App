@@ -30,7 +30,7 @@ Speed over features. The app deliberately stays a minimal capture list: type a l
 - **Android only.** Native Kotlin with XML views, Material 3, Room, MVVM (a ViewModel with LiveData). No iOS or web version is planned.
 - **Offline and on-device.** Notes are stored locally in Room. There are no accounts, no cloud sync and no network use. Android's own system backup may still include the notes.
 - **Stays minimal.** New features must protect capture speed. Titles, categories, search, rich text and similar fuller-notes features are out of scope unless this changes.
-- **Undecided:** a Play Store release. The package is still `com.example.notesapp`.
+- **Undecided:** a Play Store release. The app ID is `com.notes.manishsubah`.
 
 ## Brand Commitments
 

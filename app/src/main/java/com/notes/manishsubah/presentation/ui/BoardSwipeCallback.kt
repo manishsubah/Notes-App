@@ -1,4 +1,4 @@
-package com.example.notesapp.presentation.ui
+package com.notes.manishsubah.presentation.ui
 
 import android.content.Context
 import android.graphics.Canvas
@@ -7,10 +7,10 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
-import com.example.notesapp.R
-import com.example.notesapp.domain.model.Note
-import com.example.notesapp.presentation.adapter.BoardAdapter
-import com.example.notesapp.presentation.adapter.BoardItem
+import com.notes.manishsubah.R
+import com.notes.manishsubah.domain.model.Note
+import com.notes.manishsubah.presentation.adapter.BoardAdapter
+import com.notes.manishsubah.presentation.adapter.BoardItem
 import java.util.Locale
 
 /**

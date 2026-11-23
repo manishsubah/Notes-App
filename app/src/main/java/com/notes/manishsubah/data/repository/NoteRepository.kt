@@ -1,8 +1,8 @@
-package com.example.notesapp.data.repository
+package com.notes.manishsubah.data.repository
 
 import androidx.lifecycle.LiveData
-import com.example.notesapp.data.local.NoteDao
-import com.example.notesapp.domain.model.Note
+import com.notes.manishsubah.data.local.NoteDao
+import com.notes.manishsubah.domain.model.Note
 
 class NoteRepository(private val noteDao: NoteDao) {
 

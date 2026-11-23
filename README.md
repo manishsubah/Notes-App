@@ -66,7 +66,7 @@ Or open the project in Android Studio and run the **app** configuration on a dev
 ## Project structure
 
 ```
-app/src/main/java/com/example/notesapp/
+app/src/main/java/com/notes/manishsubah/
 ├── data/            Room database, DAO, migration, repository
 ├── domain/model/    Note entity
 └── presentation/

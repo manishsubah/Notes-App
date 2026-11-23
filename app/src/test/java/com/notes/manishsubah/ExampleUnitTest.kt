@@ -1,4 +1,4 @@
-package com.example.notesapp
+package com.notes.manishsubah
 
 import org.junit.Test
 

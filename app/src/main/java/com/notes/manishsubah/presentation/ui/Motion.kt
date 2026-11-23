@@ -1,4 +1,4 @@
-package com.example.notesapp.presentation.ui
+package com.notes.manishsubah.presentation.ui
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter

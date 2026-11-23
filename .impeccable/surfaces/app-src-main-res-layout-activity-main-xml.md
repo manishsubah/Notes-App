@@ -2,7 +2,7 @@
 version: 1
 slug: "app-src-main-res-layout-activity-main-xml"
 primary_target: "app/src/main/res/layout/activity_main.xml"
-related_targets: ["app/src/main/java/com/example/notesapp/presentation/ui/MainActivity.kt"]
+related_targets: ["app/src/main/java/com/notes/manishsubah/presentation/ui/MainActivity.kt"]
 ---
 
 # Main notes screen

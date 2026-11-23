@@ -1,4 +1,4 @@
-package com.example.notesapp.presentation.adapter
+package com.notes.manishsubah.presentation.adapter
 
 import android.animation.ArgbEvaluator
 import android.animation.ValueAnimator
@@ -13,11 +13,11 @@ import androidx.core.view.isVisible
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.notesapp.R
-import com.example.notesapp.databinding.ItemNoteBinding
-import com.example.notesapp.databinding.ItemSectionBinding
-import com.example.notesapp.domain.model.Note
-import com.example.notesapp.presentation.ui.Motion
+import com.notes.manishsubah.R
+import com.notes.manishsubah.databinding.ItemNoteBinding
+import com.notes.manishsubah.databinding.ItemSectionBinding
+import com.notes.manishsubah.domain.model.Note
+import com.notes.manishsubah.presentation.ui.Motion
 import java.util.Calendar
 import java.util.Locale
 

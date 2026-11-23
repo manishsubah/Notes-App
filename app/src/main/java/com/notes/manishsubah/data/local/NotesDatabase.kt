@@ -1,4 +1,4 @@
-package com.example.notesapp.data.local
+package com.notes.manishsubah.data.local
 
 import android.content.Context
 import androidx.room.Database
@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
-import com.example.notesapp.domain.model.Note
+import com.notes.manishsubah.domain.model.Note
 
 @Database(entities = [Note::class], version = 2, exportSchema = false)
 abstract class NotesDatabase : RoomDatabase() {

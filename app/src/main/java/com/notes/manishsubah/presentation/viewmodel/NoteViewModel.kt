@@ -1,12 +1,12 @@
-package com.example.notesapp.presentation.viewmodel
+package com.notes.manishsubah.presentation.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
-import com.example.notesapp.data.local.NotesDatabase
-import com.example.notesapp.data.repository.NoteRepository
-import com.example.notesapp.domain.model.Note
+import com.notes.manishsubah.data.local.NotesDatabase
+import com.notes.manishsubah.data.repository.NoteRepository
+import com.notes.manishsubah.domain.model.Note
 import kotlinx.coroutines.launch
 
 class NoteViewModel(application: Application) : AndroidViewModel(application) {

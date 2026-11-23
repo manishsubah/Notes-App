@@ -1,4 +1,4 @@
-package com.example.notesapp.data.local
+package com.notes.manishsubah.data.local
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
@@ -7,7 +7,7 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
-import com.example.notesapp.domain.model.Note
+import com.notes.manishsubah.domain.model.Note
 
 @Dao
 interface NoteDao {

@@ -1,7 +1,7 @@
-package com.example.notesapp
+package com.notes.manishsubah
 
 import android.app.Application
-import com.example.notesapp.presentation.ui.ThemePreference
+import com.notes.manishsubah.presentation.ui.ThemePreference
 
 class NotesApplication : Application() {
     override fun onCreate() {
