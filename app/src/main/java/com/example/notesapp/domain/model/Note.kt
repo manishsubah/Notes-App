@@ -4,9 +4,13 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-
-// Create Table
 @Entity(tableName = "notes_table")
-class Note(@ColumnInfo(name = "note_text")val text: String) {
-    @PrimaryKey(autoGenerate = true) var id = 0
-}
+data class Note(
+    @ColumnInfo(name = "note_text") val text: String,
+    @ColumnInfo(name = "is_done", defaultValue = "0") val isDone: Boolean = false,
+    @ColumnInfo(name = "is_pinned", defaultValue = "0") val isPinned: Boolean = false,
+    /** Epoch millis; 0 for notes saved before times were recorded. */
+    @ColumnInfo(name = "created_at", defaultValue = "0") val createdAt: Long = System.currentTimeMillis(),
+    @ColumnInfo(name = "updated_at", defaultValue = "0") val updatedAt: Long = createdAt,
+    @PrimaryKey(autoGenerate = true) val id: Int = 0,
+)

@@ -1,47 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/Widget.NotesApp.NoteCard"
+    android:id="@+id/row"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginVertical="@dimen/note_item_margin_vertical">
+    android:background="@color/panel"
+    android:minHeight="@dimen/board_row_min_height">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
+    <!-- Tappable header of the row: time, note, status. -->
+    <View
+        android:id="@+id/row_hit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@id/row_header_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="@dimen/board_time_column"
         android:layout_height="wrap_content"
-        android:minHeight="@dimen/delete_button_size">
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:breakStrategy="simple"
+        android:importantForAccessibility="no"
+        android:maxLines="2"
+        android:textAppearance="@style/TextAppearance.NotesApp.Figure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="14:05" />
 
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:maxLines="3"
-            android:padding="@dimen/spacing_md"
-            android:textAppearance="@style/TextAppearance.NotesApp.Body"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/delete_button"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="Remember to finish the UI revamp for NotesApp" />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_sm"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="@dimen/spacing_sm"
+        android:ellipsize="end"
+        android:importantForAccessibility="no"
+        android:maxLines="2"
+        android:textAppearance="@style/TextAppearance.NotesApp.Note"
+        app:layout_constraintEnd_toStartOf="@id/status_column"
+        app:layout_constraintStart_toEndOf="@id/time"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Call the dentist to move the appointment to next week" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/delete_button"
-            style="@style/Widget.Material3.Button.IconButton"
-            android:layout_width="@dimen/delete_button_size"
-            android:layout_height="@dimen/delete_button_size"
-            android:contentDescription="@string/delete_note"
-            app:icon="@drawable/baseline_delete_forever_24"
-            app:iconGravity="textStart"
-            app:iconPadding="0dp"
-            app:iconSize="24dp"
-            app:iconTint="@color/error"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:rippleColor="@color/error" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/status_column"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="86dp" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="14dp"
+        android:importantForAccessibility="no"
+        android:paddingHorizontal="6dp"
+        android:paddingVertical="3dp"
+        android:textAppearance="@style/TextAppearance.NotesApp.Tag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/bg_tag_new"
+        tools:text="New"
+        tools:textColor="@color/on_signal" />
 
-</com.google.android.material.card.MaterialCardView>
+    <!-- The row header ends below whichever is taller: the note text or a stacked time. -->
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/header_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="text,time" />
+
+    <Space
+        android:id="@+id/row_header_bottom"
+        android:layout_width="0dp"
+        android:layout_height="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_barrier" />
+
+    <!-- Expanded: meta line and actions. -->
+    <TextView
+        android:id="@+id/meta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_sm"
+        android:layout_marginEnd="14dp"
+        android:textAppearance="@style/TextAppearance.NotesApp.Label"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/time"
+        app:layout_constraintTop_toBottomOf="@id/row_header_bottom"
+        tools:text="Seq 007 · Added Mon 14:05"
+        tools:visibility="visible" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/action_edit"
+        style="@style/Widget.NotesApp.RowAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_edit"
+        android:visibility="gone"
+        app:icon="@drawable/ic_edit" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/action_pin"
+        style="@style/Widget.NotesApp.RowAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_pin"
+        android:visibility="gone"
+        app:icon="@drawable/ic_pin" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/action_done"
+        style="@style/Widget.NotesApp.RowAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_done"
+        android:visibility="gone"
+        app:icon="@drawable/ic_check" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/action_delete"
+        style="@style/Widget.NotesApp.RowAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_delete"
+        android:textColor="@color/danger_text"
+        android:visibility="gone"
+        app:icon="@drawable/ic_delete"
+        app:iconTint="@color/danger_text" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/actions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="@dimen/spacing_sm"
+        android:visibility="gone"
+        app:constraint_referenced_ids="action_edit,action_pin,action_done,action_delete"
+        app:flow_horizontalBias="0"
+        app:flow_horizontalGap="0dp"
+        app:flow_horizontalStyle="packed"
+        app:flow_wrapMode="chain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/time"
+        app:layout_constraintTop_toBottomOf="@id/meta" />
+
+    <Space
+        android:id="@+id/actions_bottom"
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/actions" />
+
+    <View
+        android:id="@+id/rule"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="14dp"
+        android:background="@color/hairline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

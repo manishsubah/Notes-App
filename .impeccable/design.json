@@ -1,0 +1,683 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-23T11:20:47+00:00",
+  "title": "Design System: Notes App",
+  "extensions": {
+    "platform": "android",
+    "units": "Dimensions are Android dp and sp, as in res/values; CSS snippets render them as px.",
+    "themes": {
+      "light": "res/values/colors.xml",
+      "dark": "res/values-night/colors.xml (keys suffixed -dark in the frontmatter; unsuffixed keys without a -dark twin are the same in both)"
+    },
+    "colorMeta": {
+      "ink": {
+        "role": "primary",
+        "displayName": "Departure Navy",
+        "canonical": "#0E1A2B",
+        "oklch": "oklch(21.6% 0.038 257.2)",
+        "tonalRamp": [
+          "#090B0F",
+          "#21252C",
+          "#3A434F",
+          "#556274",
+          "#768396",
+          "#9CA6B4",
+          "#C4CAD2",
+          "#EAEFF5"
+        ]
+      },
+      "ink-dark": {
+        "role": "primary",
+        "displayName": "Departure Navy (night)",
+        "canonical": "#E6EBF2",
+        "oklch": "oklch(93.8% 0.011 256.7)",
+        "tonalRamp": [
+          "#0A0B0C",
+          "#242527",
+          "#404246",
+          "#5E6167",
+          "#7F8388",
+          "#A2A5A9",
+          "#C7C9CC",
+          "#EDEEF0"
+        ]
+      },
+      "band": {
+        "role": "primary",
+        "displayName": "Header Band",
+        "canonical": "#0E1A2B",
+        "oklch": "oklch(21.6% 0.038 257.2)",
+        "tonalRamp": [
+          "#090B0F",
+          "#21252C",
+          "#3A434F",
+          "#556274",
+          "#768396",
+          "#9CA6B4",
+          "#C4CAD2",
+          "#EAEFF5"
+        ]
+      },
+      "band-dark": {
+        "role": "primary",
+        "displayName": "Header Band (night)",
+        "canonical": "#132036",
+        "oklch": "oklch(24.4% 0.046 260.4)",
+        "tonalRamp": [
+          "#080B10",
+          "#20252D",
+          "#394251",
+          "#546279",
+          "#75839B",
+          "#9BA6B7",
+          "#C3CAD4",
+          "#EAEFF6"
+        ]
+      },
+      "on-band": {
+        "role": "neutral",
+        "displayName": "On Band",
+        "canonical": "#FFFFFF",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "on-band-muted": {
+        "role": "neutral",
+        "displayName": "Band Muted",
+        "canonical": "#9FB0C6",
+        "oklch": "oklch(75.1% 0.037 254.9)",
+        "tonalRamp": [
+          "#090B0F",
+          "#21252C",
+          "#3A434E",
+          "#556274",
+          "#768496",
+          "#9CA6B4",
+          "#C3CAD2",
+          "#EAEFF5"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Board Ground",
+        "canonical": "#E9EDF2",
+        "oklch": "oklch(94.4% 0.008 253.9)",
+        "tonalRamp": [
+          "#0B0B0C",
+          "#242526",
+          "#404245",
+          "#5E6165",
+          "#7F8386",
+          "#A3A5A8",
+          "#C8C9CB",
+          "#EDEEF0"
+        ]
+      },
+      "ground-dark": {
+        "role": "neutral",
+        "displayName": "Board Ground (night)",
+        "canonical": "#0A111B",
+        "oklch": "oklch(17.6% 0.024 257.3)",
+        "tonalRamp": [
+          "#0A0B0E",
+          "#222529",
+          "#3D424A",
+          "#5A626D",
+          "#7B838F",
+          "#9FA6AE",
+          "#C6C9CF",
+          "#ECEFF2"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Panel White",
+        "canonical": "#FFFFFF",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "panel-dark": {
+        "role": "neutral",
+        "displayName": "Panel (night)",
+        "canonical": "#121B27",
+        "oklch": "oklch(21.9% 0.027 255.8)",
+        "tonalRamp": [
+          "#090B0E",
+          "#22252A",
+          "#3C434B",
+          "#59626F",
+          "#798391",
+          "#9EA6B0",
+          "#C5C9D0",
+          "#EBEFF3"
+        ]
+      },
+      "panel-sunken": {
+        "role": "neutral",
+        "displayName": "Sunken Panel",
+        "canonical": "#F3F5F8",
+        "oklch": "oklch(96.9% 0.005 258.3)",
+        "tonalRamp": [
+          "#0B0B0C",
+          "#242526",
+          "#414243",
+          "#606163",
+          "#818285",
+          "#A4A5A7",
+          "#C8C9CA",
+          "#EEEEEF"
+        ]
+      },
+      "panel-sunken-dark": {
+        "role": "neutral",
+        "displayName": "Sunken Panel (night)",
+        "canonical": "#0E1621",
+        "oklch": "oklch(19.8% 0.025 256.5)",
+        "tonalRamp": [
+          "#090B0E",
+          "#22252A",
+          "#3D424A",
+          "#59626E",
+          "#7A8390",
+          "#9FA6AF",
+          "#C5C9CF",
+          "#ECEFF3"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#DCE2E9",
+        "oklch": "oklch(91.0% 0.012 252.1)",
+        "tonalRamp": [
+          "#0A0B0C",
+          "#242527",
+          "#3F4246",
+          "#5D6267",
+          "#7E8388",
+          "#A2A5A9",
+          "#C7C9CC",
+          "#EDEFF0"
+        ]
+      },
+      "hairline-dark": {
+        "role": "neutral",
+        "displayName": "Hairline (night)",
+        "canonical": "#233044",
+        "oklch": "oklch(30.7% 0.040 258.8)",
+        "tonalRamp": [
+          "#090B0F",
+          "#21252C",
+          "#3A4350",
+          "#556276",
+          "#768398",
+          "#9CA6B5",
+          "#C3CAD3",
+          "#EAEFF5"
+        ]
+      },
+      "perforation": {
+        "role": "neutral",
+        "displayName": "Perforation Grey",
+        "canonical": "#C3CCD7",
+        "oklch": "oklch(84.2% 0.018 253.4)",
+        "tonalRamp": [
+          "#0A0B0D",
+          "#232528",
+          "#3E4248",
+          "#5B626A",
+          "#7C838C",
+          "#A0A6AC",
+          "#C6C9CD",
+          "#ECEFF1"
+        ]
+      },
+      "perforation-dark": {
+        "role": "neutral",
+        "displayName": "Perforation Grey (night)",
+        "canonical": "#33425A",
+        "oklch": "oklch(37.7% 0.046 259.6)",
+        "tonalRamp": [
+          "#080B10",
+          "#20252D",
+          "#394251",
+          "#546278",
+          "#74839B",
+          "#9BA6B7",
+          "#C3CAD4",
+          "#EAEFF6"
+        ]
+      },
+      "pass-stroke-dark": {
+        "role": "neutral",
+        "displayName": "Pass Stroke (night only; transparent by day)",
+        "canonical": "#2A3950",
+        "oklch": "oklch(34.2% 0.045 258.7)",
+        "tonalRamp": [
+          "#080B10",
+          "#20252D",
+          "#394351",
+          "#546278",
+          "#74839A",
+          "#9BA6B7",
+          "#C3CAD4",
+          "#EAEFF6"
+        ]
+      },
+      "label": {
+        "role": "neutral",
+        "displayName": "Label Slate",
+        "canonical": "#5E6E84",
+        "oklch": "oklch(53.3% 0.040 256.4)",
+        "tonalRamp": [
+          "#090B0F",
+          "#21252C",
+          "#3A434F",
+          "#556275",
+          "#758497",
+          "#9BA6B5",
+          "#C3CAD3",
+          "#EAEFF5"
+        ]
+      },
+      "label-dark": {
+        "role": "neutral",
+        "displayName": "Label Slate (night)",
+        "canonical": "#94A3B8",
+        "oklch": "oklch(71.1% 0.035 256.8)",
+        "tonalRamp": [
+          "#090B0F",
+          "#21252B",
+          "#3B434E",
+          "#566273",
+          "#778395",
+          "#9DA6B3",
+          "#C4CAD2",
+          "#EBEFF4"
+        ]
+      },
+      "text-done": {
+        "role": "neutral",
+        "displayName": "Done Slate",
+        "canonical": "#6B7789",
+        "oklch": "oklch(56.6% 0.031 258.4)",
+        "tonalRamp": [
+          "#090B0F",
+          "#22252B",
+          "#3C424D",
+          "#586271",
+          "#788393",
+          "#9EA6B2",
+          "#C5C9D1",
+          "#EBEFF4"
+        ]
+      },
+      "text-done-dark": {
+        "role": "neutral",
+        "displayName": "Done Slate (night)",
+        "canonical": "#7E8A9C",
+        "oklch": "oklch(63.0% 0.031 258.4)",
+        "tonalRamp": [
+          "#090B0E",
+          "#22252B",
+          "#3C424C",
+          "#586271",
+          "#798393",
+          "#9EA6B1",
+          "#C5C9D1",
+          "#EBEFF4"
+        ]
+      },
+      "signal": {
+        "role": "secondary",
+        "displayName": "Signal Amber",
+        "canonical": "#F2B705",
+        "oklch": "oklch(81.1% 0.166 85.0)",
+        "tonalRamp": [
+          "#130900",
+          "#322200",
+          "#5B3C00",
+          "#865700",
+          "#AA7900",
+          "#C3A055",
+          "#DBC79D",
+          "#FBEDD0"
+        ]
+      },
+      "on-signal": {
+        "role": "secondary",
+        "displayName": "On Signal Navy",
+        "canonical": "#0E1A2B",
+        "oklch": "oklch(21.6% 0.038 257.2)",
+        "tonalRamp": [
+          "#090B0F",
+          "#21252C",
+          "#3A434F",
+          "#556274",
+          "#768396",
+          "#9CA6B4",
+          "#C4CAD2",
+          "#EAEFF5"
+        ]
+      },
+      "signal-lit-row": {
+        "role": "secondary",
+        "displayName": "Lit Row Amber",
+        "canonical": "#FFF4CC",
+        "oklch": "oklch(96.6% 0.053 94.4)",
+        "tonalRamp": [
+          "#0D0B05",
+          "#28251A",
+          "#48422E",
+          "#6A6143",
+          "#8B8263",
+          "#ABA58E",
+          "#CDC9BB",
+          "#F1EFE5"
+        ]
+      },
+      "signal-lit-row-dark": {
+        "role": "secondary",
+        "displayName": "Lit Row Amber (night)",
+        "canonical": "#33290A",
+        "oklch": "oklch(28.5% 0.048 91.0)",
+        "tonalRamp": [
+          "#0D0B06",
+          "#28251B",
+          "#484230",
+          "#6A6146",
+          "#8C8266",
+          "#ACA590",
+          "#CDC9BD",
+          "#F1EEE6"
+        ]
+      },
+      "danger": {
+        "role": "error",
+        "displayName": "Delete Red",
+        "canonical": "#B3261E",
+        "oklch": "oklch(50.1% 0.178 28.7)",
+        "tonalRamp": [
+          "#1A0302",
+          "#3F1612",
+          "#71241D",
+          "#A83228",
+          "#CF5649",
+          "#E28A7D",
+          "#F1BAB1",
+          "#FFE4DE"
+        ]
+      },
+      "on-danger": {
+        "role": "error",
+        "displayName": "On Delete Red",
+        "canonical": "#FFFFFF",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "danger-text": {
+        "role": "error",
+        "displayName": "Delete Text",
+        "canonical": "#B3261E",
+        "oklch": "oklch(50.1% 0.178 28.7)",
+        "tonalRamp": [
+          "#1A0302",
+          "#3F1612",
+          "#71241D",
+          "#A83228",
+          "#CF5649",
+          "#E28A7D",
+          "#F1BAB1",
+          "#FFE4DE"
+        ]
+      },
+      "danger-text-dark": {
+        "role": "error",
+        "displayName": "Delete Text (night)",
+        "canonical": "#F2B8B5",
+        "oklch": "oklch(83.4% 0.068 22.0)",
+        "tonalRamp": [
+          "#120808",
+          "#302020",
+          "#563938",
+          "#805452",
+          "#A37572",
+          "#BE9B99",
+          "#D9C3C2",
+          "#FAEAE9"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "title": {
+        "displayName": "Title",
+        "purpose": "My Notes on the band; the one heading."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Note text in board rows."
+      },
+      "body-input": {
+        "displayName": "Body Input",
+        "purpose": "The pass text field."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Column heads, section labels, pass label/hint, count, meta line, text and row actions. All caps."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Row times, tabular."
+      },
+      "tag": {
+        "displayName": "Tag",
+        "purpose": "Status tags. All caps."
+      },
+      "stub": {
+        "displayName": "Stub",
+        "purpose": "ADD / SAVE on the amber stub. All caps."
+      }
+    },
+    "shadows": [
+      {
+        "name": "pass-lift",
+        "value": "MaterialCardView cardElevation 6dp (approx. 0 3px 6px rgba(14,26,43,.16), 0 6px 12px rgba(14,26,43,.10))",
+        "purpose": "The boarding pass only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-decelerate",
+        "value": "cubic-bezier(0.05, 0.7, 0.1, 1)",
+        "purpose": "Row drop-in, input return, lit-row fade."
+      },
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.2, 0, 0, 1)",
+        "purpose": "Print-out of the pass text."
+      },
+      {
+        "name": "duration-short",
+        "value": "160ms",
+        "purpose": "Row removal, each half of the print-out."
+      },
+      {
+        "name": "duration-medium",
+        "value": "280ms",
+        "purpose": "Row add and move."
+      },
+      {
+        "name": "row-drop",
+        "value": "translateY(-20dp) + alpha 0 -> 0/1, 280ms, start delay 93ms",
+        "purpose": "New rows drop into their slot while rows below make room."
+      },
+      {
+        "name": "lit-hold",
+        "value": "2200ms",
+        "purpose": "Amber lit-row hold before fading."
+      },
+      {
+        "name": "lit-fade",
+        "value": "900ms",
+        "purpose": "Lit-row fade to panel; NEW settles to the real status."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "ANIMATOR_DURATION_SCALE == 0 -> instant cuts",
+        "purpose": "Honours 'Remove animations'."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "single column; no other breakpoint in the build"
+      }
+    ],
+    "perforation": {
+      "stroke": "1.5dp",
+      "dash": "5dp",
+      "gap": "4dp",
+      "width": "16dp",
+      "notch": "semicircle radius 8dp, top painted band, bottom painted ground"
+    },
+    "icons": "Material Icons Outlined vector drawables (ic_edit, ic_pin, ic_check, ic_delete, ic_reopen) at 18dp, tinted ink or danger-text."
+  },
+  "components": [
+    {
+      "name": "Boarding Pass",
+      "kind": "custom",
+      "refersTo": "pass",
+      "description": "The composer: label, field, hint, dashed perforation with notches, amber stub. The only lifted surface.",
+      "html": "<div class=\"ds-pass-wrap\"><div class=\"ds-pass\"><div class=\"ds-pass-main\"><div class=\"ds-pass-label\">New note</div><input class=\"ds-pass-input\" placeholder=\"Write a note…\"><div class=\"ds-pass-label\">Enter to add</div></div><div class=\"ds-perf\"></div><button class=\"ds-stub\">Add</button></div></div>",
+      "css": ":host{--ink:#0E1A2B;--ground:#E9EDF2;--panel:#FFFFFF;--sunken:#F3F5F8;--hair:#DCE2E9;--perf:#C3CCD7;--label:#5E6E84;--done:#6B7789;--signal:#F2B705;--lit:#FFF4CC;--danger:#B3261E;--band:#0E1A2B}.ds-pass-wrap{background:linear-gradient(var(--band) 0 56px,var(--ground) 56px);padding:24px 16px}.ds-pass{display:flex;background:var(--panel);border-radius:10px;overflow:hidden;box-shadow:0 3px 6px rgba(14,26,43,.16),0 6px 12px rgba(14,26,43,.10)}.ds-pass-main{flex:1;padding:12px 8px 12px 16px}.ds-pass-label{font-family:'Barlow Semi Condensed', 'Roboto Condensed', sans-serif;font-weight:600;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;font-variant-numeric:tabular-nums;color:var(--label)}.ds-pass-input{display:block;width:100%;border:0;outline:0;background:transparent;font:400 18px Roboto,sans-serif;color:var(--ink);padding:8px 0;margin-top:4px;min-height:48px}.ds-pass-input::placeholder{color:var(--label)}.ds-perf{width:16px;position:relative;background:linear-gradient(var(--perf) 55%,transparent 0) center/1.5px 9px repeat-y;margin:12px 0}.ds-perf::before,.ds-perf::after{content:'';position:absolute;left:0;width:16px;height:16px;border-radius:50%}.ds-perf::before{top:-20px;background:var(--band)}.ds-perf::after{bottom:-20px;background:var(--ground)}.ds-stub{width:88px;border:0;background:var(--signal);color:var(--ink);font-family:'Barlow Semi Condensed', 'Roboto Condensed', sans-serif;font-weight:700;font-size:17px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}.ds-stub:hover{filter:brightness(.95)}.ds-stub:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}.ds-stub:active{filter:brightness(.88)}"
+    },
+    {
+      "name": "Add Stub",
+      "kind": "button",
+      "refersTo": "stub-add",
+      "description": "The primary action: always amber, ADD or SAVE.",
+      "html": "<button class=\"ds-stub-btn\">Add</button>",
+      "css": ":host{--ink:#0E1A2B;--ground:#E9EDF2;--panel:#FFFFFF;--sunken:#F3F5F8;--hair:#DCE2E9;--perf:#C3CCD7;--label:#5E6E84;--done:#6B7789;--signal:#F2B705;--lit:#FFF4CC;--danger:#B3261E;--band:#0E1A2B}.ds-stub-btn{width:88px;height:96px;border:0;border-radius:0 10px 10px 0;background:var(--signal);color:var(--ink);font-family:'Barlow Semi Condensed', 'Roboto Condensed', sans-serif;font-weight:700;font-size:17px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:filter .16s}.ds-stub-btn:hover{filter:brightness(.95)}.ds-stub-btn:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}.ds-stub-btn:active{filter:brightness(.88)}"
+    },
+    {
+      "name": "Board",
+      "kind": "card",
+      "refersTo": "board",
+      "description": "Flat panel with a fixed TIME · NOTE · STATUS header, sunken section rows, hairline-ruled rows; one row lit amber.",
+      "html": "<div class=\"ds-board\"><div class=\"ds-cols\"><span class=\"ds-c-time\">Time</span><span class=\"ds-c-note\">Note</span><span class=\"ds-c-status\">Status</span></div><div class=\"ds-sec\">Pinned · 1</div><div class=\"ds-row\"><span class=\"ds-time\">4:45 PM</span><span class=\"ds-note\">Renew passport before 12 Dec</span><span class=\"ds-tag ds-tag-pinned\">Pinned</span></div><div class=\"ds-sec\">Open · 2</div><div class=\"ds-row ds-lit\"><span class=\"ds-time\">4:47 PM</span><span class=\"ds-note\">Book the train</span><span class=\"ds-tag ds-tag-new\">New</span></div><div class=\"ds-row\"><span class=\"ds-time\">4:45 PM</span><span class=\"ds-note\">Buy milk and eggs</span><span class=\"ds-tag\">Open</span></div><div class=\"ds-sec\"><span>Done · 1</span><button class=\"ds-clear\">Clear</button></div><div class=\"ds-row\"><span class=\"ds-time\">Mon</span><span class=\"ds-note ds-done\">Pay electricity bill</span><span class=\"ds-tag ds-tag-done\">Done</span></div></div>",
+      "css": ":host{--ink:#0E1A2B;--ground:#E9EDF2;--panel:#FFFFFF;--sunken:#F3F5F8;--hair:#DCE2E9;--perf:#C3CCD7;--label:#5E6E84;--done:#6B7789;--signal:#F2B705;--lit:#FFF4CC;--danger:#B3261E;--band:#0E1A2B}.ds-board{background:var(--panel);border:1px solid var(--hair);border-radius:10px;overflow:hidden;max-width:380px}.ds-cols{display:flex;align-items:center;height:36px;padding:0 14px;border-bottom:1px solid var(--hair);font-family:'Barlow Semi Condensed', 'Roboto Condensed', sans-serif;font-weight:600;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;font-variant-numeric:tabular-nums;color:var(--label)}.ds-c-time,.ds-time{width:64px;flex:none}.ds-c-note{flex:1;margin-left:8px}.ds-c-status{width:72px;text-align:right}.ds-sec{display:flex;justify-content:space-between;align-items:center;min-height:36px;padding:0 6px 0 14px;background:var(--sunken);font-family:'Barlow Semi Condensed', 'Roboto Condensed', sans-serif;font-weight:600;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;font-variant-numeric:tabular-nums;color:var(--label)}.ds-clear{border:0;background:none;min-height:36px;padding:0 8px;font-family:'Barlow Semi Condensed', 'Roboto Condensed', sans-serif;font-weight:600;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;font-variant-numeric:tabular-nums;color:var(--ink);cursor:pointer}.ds-clear:hover{background:var(--hair)}.ds-row{display:flex;align-items:flex-start;min-height:56px;padding:15px 14px 14px;border-bottom:1px solid var(--hair);background:var(--panel);transition:background .9s cubic-bezier(.05,.7,.1,1);cursor:pointer}.ds-row:hover{background:var(--sunken)}.ds-lit,.ds-lit:hover{background:var(--lit)}.ds-time{font-family:'Barlow Semi Condensed', 'Roboto Condensed', sans-serif;font-weight:500;font-size:14px;letter-spacing:.02em;font-variant-numeric:tabular-nums;color:var(--label);padding-top:2px}.ds-note{flex:1;margin:0 8px;font:400 16px/26px Roboto,sans-serif;color:var(--ink)}.ds-done{color:var(--done);text-decoration:line-through}.ds-tag{font-family:'Barlow Semi Condensed', 'Roboto Condensed', sans-serif;font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:3px 6px;border-radius:4px;color:var(--label)}.ds-tag-new{background:var(--signal);color:var(--ink)}.ds-tag-pinned{background:var(--ink);color:var(--panel)}.ds-tag-done{color:var(--done)}"
+    },
+    {
+      "name": "Status Tags",
+      "kind": "chip",
+      "refersTo": "tag-new",
+      "description": "NEW (amber, live change only), PINNED (ink), OPEN and DONE (text only).",
+      "html": "<div class=\"ds-tags\"><span class=\"ds-t ds-t-new\">New</span><span class=\"ds-t ds-t-pin\">Pinned</span><span class=\"ds-t\">Open</span><span class=\"ds-t ds-t-done\">Done</span></div>",
+      "css": ":host{--ink:#0E1A2B;--ground:#E9EDF2;--panel:#FFFFFF;--sunken:#F3F5F8;--hair:#DCE2E9;--perf:#C3CCD7;--label:#5E6E84;--done:#6B7789;--signal:#F2B705;--lit:#FFF4CC;--danger:#B3261E;--band:#0E1A2B}.ds-tags{display:flex;gap:16px;align-items:center}.ds-t{font-family:'Barlow Semi Condensed', 'Roboto Condensed', sans-serif;font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:3px 6px;border-radius:4px;color:var(--label)}.ds-t-new{background:var(--signal);color:var(--ink)}.ds-t-pin{background:var(--ink);color:#fff}.ds-t-done{color:var(--done)}"
+    },
+    {
+      "name": "Row Actions",
+      "kind": "button",
+      "refersTo": "row-action",
+      "description": "Borderless caps text buttons with 18dp outlined icons in an expanded row; Delete in danger text.",
+      "html": "<div class=\"ds-acts\"><button class=\"ds-act\"><svg viewBox=\"0 0 24 24\"><path d=\"M14.06 9.02l.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 000-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z\"/></svg>Edit</button><button class=\"ds-act\"><svg viewBox=\"0 0 24 24\"><path d=\"M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z\"/></svg>Done</button><button class=\"ds-act ds-act-del\"><svg viewBox=\"0 0 24 24\"><path d=\"M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z\"/></svg>Delete</button></div>",
+      "css": ":host{--ink:#0E1A2B;--ground:#E9EDF2;--panel:#FFFFFF;--sunken:#F3F5F8;--hair:#DCE2E9;--perf:#C3CCD7;--label:#5E6E84;--done:#6B7789;--signal:#F2B705;--lit:#FFF4CC;--danger:#B3261E;--band:#0E1A2B}.ds-acts{display:flex;flex-wrap:wrap}.ds-act{display:inline-flex;align-items:center;gap:6px;min-height:48px;padding:0 12px;border:0;background:none;border-radius:4px;font-family:'Barlow Semi Condensed', 'Roboto Condensed', sans-serif;font-weight:600;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;font-variant-numeric:tabular-nums;color:var(--ink);cursor:pointer}.ds-act svg{width:18px;height:18px;fill:currentColor}.ds-act:hover{background:var(--hair)}.ds-act:focus-visible{outline:2px solid var(--ink);outline-offset:-2px}.ds-act-del{color:var(--danger)}"
+    },
+    {
+      "name": "Header Band",
+      "kind": "nav",
+      "refersTo": "board-column-header",
+      "description": "Navy band carrying the title and the tabular open/done count.",
+      "html": "<div class=\"ds-band\"><span class=\"ds-title\">My Notes</span><span class=\"ds-count\">7 open · 1 done</span></div>",
+      "css": ":host{--ink:#0E1A2B;--ground:#E9EDF2;--panel:#FFFFFF;--sunken:#F3F5F8;--hair:#DCE2E9;--perf:#C3CCD7;--label:#5E6E84;--done:#6B7789;--signal:#F2B705;--lit:#FFF4CC;--danger:#B3261E;--band:#0E1A2B}.ds-band{display:flex;justify-content:space-between;align-items:baseline;background:var(--band);padding:20px 20px 64px}.ds-title{font-family:'Barlow Semi Condensed', 'Roboto Condensed', sans-serif;font-weight:700;font-size:28px;color:#fff}.ds-count{font-family:'Barlow Semi Condensed', 'Roboto Condensed', sans-serif;font-weight:600;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;font-variant-numeric:tabular-nums;color:#9FB0C6}"
+    },
+    {
+      "name": "Swipe Strips",
+      "kind": "custom",
+      "refersTo": "swipe-strip-delete",
+      "description": "Revealed under a swiped row: red DELETE toward the start, ink DONE/REOPEN toward the end.",
+      "html": "<div class=\"ds-sw ds-sw-done\">Done</div><div class=\"ds-sw ds-sw-del\">Delete</div>",
+      "css": ":host{--ink:#0E1A2B;--ground:#E9EDF2;--panel:#FFFFFF;--sunken:#F3F5F8;--hair:#DCE2E9;--perf:#C3CCD7;--label:#5E6E84;--done:#6B7789;--signal:#F2B705;--lit:#FFF4CC;--danger:#B3261E;--band:#0E1A2B}.ds-sw{height:56px;display:flex;align-items:center;padding:0 20px;font-family:'Barlow Semi Condensed', 'Roboto Condensed', sans-serif;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;max-width:380px}.ds-sw-done{background:var(--ink);color:#fff}.ds-sw-del{background:var(--danger);color:#fff;justify-content:flex-end}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Gate Board",
+    "overview": "The note list is a departure board, not a stack of cards. Notes sit as rows in a fixed TIME · NOTE · STATUS grid on one white panel, rerank in place when pinned or ticked off, and a change stays lit amber until it has been seen. The composer is a boarding pass that overlaps the foot of a navy header band: a label line, the field, a hint, a dashed perforation, and an amber stub that prints the note onto the board.\n\nThe world is cool and quiet so that one colour can speak. Neutrals are tinted toward the navy ink; amber is the only signal and only ever marks a change. Labels are condensed tracked caps; every figure is tabular so times and counts line up in columns. Density is that of a real board: hairline rules, 14dp row insets, no gaps between rows. The world refuses floating note cards under a FAB and the chat-style bottom composer.\n\nMotion follows one grammar: a row never disappears and reappears elsewhere. New rows drop in at the head while the rows below make room, reorders slide, and the system \"Remove animations\" setting turns every movement into an instant cut.",
+    "keyCharacteristics": [
+      "Navy ink band at the top, cool grey ground, white panels, one amber signal.",
+      "Boarding-pass composer with a perforation and an amber stub as the primary action.",
+      "Board panel with a fixed column header, sunken section rows and hairline row rules.",
+      "Condensed tracked caps for every label, tag and action; tabular figures for every time and count.",
+      "Change is shown by light (an amber row that fades), never by a badge that lingers."
+    ],
+    "rules": [
+      {
+        "name": "The One Signal Rule",
+        "body": "Amber marks change and the primary action, nothing else. The stub is always amber; the NEW tag and the lit row are amber only while the change is live. When the light fades, NEW settles to the row's real status.",
+        "section": "colors"
+      },
+      {
+        "name": "The Paired Value Rule",
+        "body": "No colour ships without its night value. Light and dark are the same roles, resolved from `values/colors.xml` and `values-night/colors.xml`.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tabular Figures Rule",
+        "body": "Every number on the board (times, counts, sequence numbers) is set with `tnum` so columns align.",
+        "section": "typography"
+      },
+      {
+        "name": "The Signage Caps Rule",
+        "body": "Caps are for signage only. Note text is never set in caps or in the condensed face.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Ticket Rule",
+        "body": "Only the pass casts a shadow. The board and its rows are flat.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** keep amber to the stub, the NEW tag and the lit row; let the light fade (2200ms hold, 900ms fade) and settle NEW to the real status.",
+      "**Do** move rows to their new place on pin, done and reopen; never remove and re-insert them elsewhere.",
+      "**Do** set every label, tag and action in Barlow Semi Condensed caps with tracking, and every figure with `tnum`.",
+      "**Do** keep the fixed TIME (64dp) · NOTE · STATUS (72dp) grid and 14dp row insets for any new row type.",
+      "**Do** define every new colour in both `values/colors.xml` and `values-night/colors.xml`.",
+      "**Do** respect \"Remove animations\" with instant cuts."
+    ],
+    "donts": [
+      "**Don't** add floating note cards, a FAB or a bottom chat composer; the pass at the top is the composer.",
+      "**Don't** give the board or rows elevation; the pass is the only lifted object.",
+      "**Don't** use amber for decoration, emphasis or static states.",
+      "**Don't** set note text in caps or in the condensed face.",
+      "**Don't** use red outside delete."
+    ]
+  }
+}

@@ -6,12 +6,18 @@
     <dimen name="spacing_lg">24dp</dimen>
     <dimen name="spacing_xl">32dp</dimen>
 
-    <dimen name="corner_card">12dp</dimen>
-    <dimen name="corner_input">16dp</dimen>
+    <dimen name="corner_panel">10dp</dimen>
+    <dimen name="corner_tag">4dp</dimen>
 
-    <dimen name="toolbar_height">64dp</dimen>
-    <dimen name="fab_size">56dp</dimen>
-    <dimen name="delete_button_size">48dp</dimen>
-    <dimen name="note_item_margin_vertical">4dp</dimen>
-    <dimen name="input_panel_elevation">8dp</dimen>
+    <!-- Pass composer -->
+    <dimen name="pass_overlap">56dp</dimen>
+    <dimen name="pass_stub_width">88dp</dimen>
+    <dimen name="pass_notch">16dp</dimen>
+    <dimen name="pass_elevation">6dp</dimen>
+
+    <!-- Board grid -->
+    <dimen name="board_time_column">64dp</dimen>
+    <dimen name="board_status_column">72dp</dimen>
+    <dimen name="board_row_min_height">56dp</dimen>
+    <dimen name="touch_target">48dp</dimen>
 </resources>

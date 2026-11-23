@@ -1,26 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Brand -->
-    <color name="primary">#7986CB</color>
-    <color name="primary_dark">#5C6BC0</color>
-    <color name="on_primary">#1A1A2E</color>
+    <color name="ink">#E6EBF2</color>
+    <color name="band">#132036</color>
+    <color name="on_band">#FFFFFF</color>
+    <color name="on_band_muted">#9FB0C6</color>
 
-    <!-- Surfaces -->
-    <color name="surface">#121212</color>
-    <color name="on_surface">#E6E1E5</color>
-    <color name="surface_variant">#49454F</color>
-    <color name="on_surface_variant">#CAC4D0</color>
+    <color name="ground">#0A111B</color>
+    <color name="panel">#121B27</color>
+    <color name="panel_sunken">#0E1621</color>
+    <color name="hairline">#233044</color>
+    <color name="perforation">#33425A</color>
+    <color name="pass_stroke">#2A3950</color>
+    <color name="label">#94A3B8</color>
+    <color name="text_done">#7E8A9C</color>
 
-    <!-- Note cards -->
-    <color name="note_card">#1E1E1E</color>
-    <color name="note_card_stroke">#3A3A3A</color>
+    <color name="signal">#F2B705</color>
+    <color name="on_signal">#0E1A2B</color>
+    <color name="signal_lit_row">#33290A</color>
 
-    <!-- Semantic -->
-    <color name="outline">#938F99</color>
-    <color name="error">#F2B8B5</color>
-    <color name="on_error">#601410</color>
+    <color name="danger">#B3261E</color>
+    <color name="on_danger">#FFFFFF</color>
+    <color name="danger_text">#F2B8B5</color>
 
-    <!-- Splash -->
-    <color name="splash_background">#1A1A2E</color>
-    <color name="splash_icon_tint">#7986CB</color>
+    <color name="primary">#E6EBF2</color>
+    <color name="on_primary">#0E1A2B</color>
+    <color name="primary_dark">#050B14</color>
+    <color name="inverse_surface">#E6EBF2</color>
+    <color name="inverse_on_surface">#0E1A2B</color>
+    <color name="inverse_primary">#7A5400</color>
+
+    <color name="splash_background">#0A111B</color>
+    <color name="splash_icon_tint">#E6EBF2</color>
 </resources>

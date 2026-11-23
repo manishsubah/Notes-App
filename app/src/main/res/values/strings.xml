@@ -1,15 +1,71 @@
 <resources>
     <string name="app_name">NotesApp</string>
     <string name="app_title">My Notes</string>
-    <string name="enter_note_here">Write a note…</string>
-    <string name="submit">Submit</string>
+
+    <!-- Board header -->
+    <string name="board_count">%1$d open · %2$d done</string>
+    <string name="board_count_empty">Nothing open</string>
+
+    <!-- Pass composer -->
+    <string name="pass_label_new">New note</string>
+    <string name="pass_label_edit">Editing · Seq %1$03d</string>
+    <string name="pass_hint">Write a note…</string>
+    <string name="pass_footer_new">Enter to add</string>
+    <string name="pass_footer_edit">Enter to save</string>
+    <string name="pass_stub_add">Add</string>
+    <string name="pass_stub_save">Save</string>
+    <string name="pass_cancel">Cancel</string>
     <string name="add_note">Add note</string>
+    <string name="save_note">Save note</string>
 
-    <string name="empty_notes_title">No notes yet</string>
-    <string name="empty_notes_subtitle">Tap below to capture your first thought</string>
+    <!-- Board columns and sections -->
+    <string name="column_time">Time</string>
+    <string name="column_note">Note</string>
+    <string name="column_status">Status</string>
+    <string name="section_pinned">Pinned</string>
+    <string name="section_open">Open</string>
+    <string name="section_done">Done</string>
+    <string name="clear_done">Clear</string>
 
-    <string name="delete_note">Delete note</string>
-    <string name="note_added">Note added</string>
+    <!-- Statuses -->
+    <string name="status_new">New</string>
+    <string name="status_pinned">Pinned</string>
+    <string name="status_open">Open</string>
+    <string name="status_done">Done</string>
+    <string name="time_earlier">—</string>
+
+    <!-- Row actions -->
+    <string name="action_edit">Edit</string>
+    <string name="action_pin">Pin</string>
+    <string name="action_unpin">Unpin</string>
+    <string name="action_done">Done</string>
+    <string name="action_reopen">Reopen</string>
+    <string name="action_delete">Delete</string>
+    <string name="row_meta">Seq %1$03d · Added %2$s</string>
+    <string name="row_meta_edited">Seq %1$03d · Added %2$s · Updated %3$s</string>
+    <string name="row_meta_legacy">Seq %1$03d</string>
+    <string name="swipe_delete">Delete</string>
+    <string name="swipe_done">Done</string>
+    <string name="swipe_reopen">Reopen</string>
+    <string name="row_a11y">%1$s. %2$s. Double tap for actions.</string>
+
+    <!-- Empty state -->
+    <string name="empty_title">No notes on the board</string>
+    <string name="empty_subtitle">Write one above. It lands here first.</string>
+    <string name="ghost_time">--:--</string>
+    <string name="ghost_status">—</string>
+    <string name="legend_tap">Tap</string>
+    <string name="legend_tap_action">Expand · edit · pin</string>
+    <string name="legend_swipe_start">Swipe left</string>
+    <string name="legend_swipe_start_action">Delete · undo after</string>
+    <string name="legend_swipe_end">Swipe right</string>
+    <string name="legend_swipe_end_action">Mark done · reopen</string>
+
+    <!-- Feedback -->
     <string name="note_deleted">Note deleted</string>
+    <plurals name="done_cleared">
+        <item quantity="one">%1$d done note cleared</item>
+        <item quantity="other">%1$d done notes cleared</item>
+    </plurals>
     <string name="undo">Undo</string>
 </resources>

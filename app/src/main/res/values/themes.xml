@@ -4,17 +4,29 @@
         <item name="colorPrimary">@color/primary</item>
         <item name="colorOnPrimary">@color/on_primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
-        <item name="colorSurface">@color/surface</item>
-        <item name="colorOnSurface">@color/on_surface</item>
-        <item name="colorSurfaceVariant">@color/surface_variant</item>
-        <item name="colorOnSurfaceVariant">@color/on_surface_variant</item>
-        <item name="colorOutline">@color/outline</item>
-        <item name="colorError">@color/error</item>
-        <item name="colorOnError">@color/on_error</item>
+        <item name="colorSecondary">@color/signal</item>
+        <item name="colorOnSecondary">@color/on_signal</item>
+        <item name="colorSurface">@color/panel</item>
+        <item name="colorOnSurface">@color/ink</item>
+        <item name="colorSurfaceVariant">@color/panel_sunken</item>
+        <item name="colorOnSurfaceVariant">@color/label</item>
+        <item name="colorOutline">@color/hairline</item>
+        <item name="colorSurfaceInverse">@color/inverse_surface</item>
+        <item name="colorOnSurfaceInverse">@color/inverse_on_surface</item>
+        <item name="colorPrimaryInverse">@color/inverse_primary</item>
+        <item name="colorError">@color/danger</item>
+        <item name="colorOnError">@color/on_danger</item>
+        <item name="android:colorBackground">@color/ground</item>
+        <item name="android:textColorHighlight">@color/signal_lit_row</item>
+        <!-- Panels stay true white/ink-neutral; elevation reads as shadow, not tint. -->
+        <item name="elevationOverlayEnabled">false</item>
+        <item name="snackbarStyle">@style/Widget.NotesApp.Snackbar</item>
+        <!-- The header band is always dark, so status bar icons are always light. -->
         <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">true</item>
-        <item name="android:windowBackground">@color/surface</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">@bool/light_system_bars</item>
+        <item name="android:windowBackground">@color/ground</item>
     </style>
 
     <style name="Theme.NotesApp.Splash" parent="Theme.SplashScreen">

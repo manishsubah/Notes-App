@@ -1,30 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Brand -->
-    <color name="primary">#3F51B5</color>
-    <color name="primary_dark">#303F9F</color>
+    <!-- Gate Board world. Neutrals are cool and tinted toward the navy ink; amber is the
+         single signal colour and only ever marks a change (new, just pinned, just done). -->
+
+    <!-- Ink and band -->
+    <color name="ink">#0E1A2B</color>
+    <color name="band">#0E1A2B</color>
+    <color name="on_band">#FFFFFF</color>
+    <color name="on_band_muted">#9FB0C6</color>
+
+    <!-- Ground, panels, rules -->
+    <color name="ground">#E9EDF2</color>
+    <color name="panel">#FFFFFF</color>
+    <color name="panel_sunken">#F3F5F8</color>
+    <color name="hairline">#DCE2E9</color>
+    <color name="perforation">#C3CCD7</color>
+    <color name="pass_stroke">#00000000</color>
+    <color name="label">#5E6E84</color>
+    <color name="text_done">#6B7789</color>
+
+    <!-- Signal -->
+    <color name="signal">#F2B705</color>
+    <color name="on_signal">#0E1A2B</color>
+    <color name="signal_lit_row">#FFF4CC</color>
+
+    <!-- Destructive (swipe-to-delete only) -->
+    <color name="danger">#B3261E</color>
+    <color name="on_danger">#FFFFFF</color>
+    <color name="danger_text">#B3261E</color>
+
+    <!-- Material role mapping -->
+    <color name="primary">#0E1A2B</color>
     <color name="on_primary">#FFFFFF</color>
-
-    <!-- Surfaces -->
-    <color name="surface">#FAFAFA</color>
-    <color name="on_surface">#1C1B1F</color>
-    <color name="surface_variant">#E7E0EC</color>
-    <color name="on_surface_variant">#49454F</color>
-
-    <!-- Note cards -->
-    <color name="note_card">#FFFFFF</color>
-    <color name="note_card_stroke">#E0E0E0</color>
-
-    <!-- Semantic -->
-    <color name="outline">#79747E</color>
-    <color name="error">#B3261E</color>
-    <color name="on_error">#FFFFFF</color>
+    <color name="primary_dark">#050B14</color>
+    <color name="inverse_surface">#0E1A2B</color>
+    <color name="inverse_on_surface">#E9EDF2</color>
+    <color name="inverse_primary">#F2B705</color>
 
     <!-- Splash -->
-    <color name="splash_background">#3F51B5</color>
+    <color name="splash_background">#0E1A2B</color>
     <color name="splash_icon_tint">#FFFFFF</color>
 
-    <!-- App icon -->
+    <!-- App icon (launcher drawables) -->
     <color name="icon_bg_start">#3949AB</color>
     <color name="icon_bg_end">#1A237E</color>
     <color name="icon_paper">#FFFFFF</color>
@@ -32,8 +49,4 @@
     <color name="icon_ink">#3F51B5</color>
     <color name="icon_accent">#FF7043</color>
     <color name="icon_accent_glow">#33FF7043</color>
-
-    <!-- Legacy aliases (kept for compatibility) -->
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
 </resources>

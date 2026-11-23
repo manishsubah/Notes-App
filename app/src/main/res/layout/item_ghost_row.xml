@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A placeholder board row for the empty state: the columns with nothing scheduled in them. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:importantForAccessibility="noHideDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/board_row_min_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="14dp">
+
+        <TextView
+            android:layout_width="@dimen/board_time_column"
+            android:layout_height="wrap_content"
+            android:text="@string/ghost_time"
+            android:textAppearance="@style/TextAppearance.NotesApp.Figure"
+            android:textColor="@color/perforation" />
+
+        <!-- Software layer: dashed line shapes do not draw under hardware acceleration. -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="@dimen/spacing_sm"
+            android:layout_marginEnd="@dimen/spacing_lg"
+            android:layout_weight="1"
+            android:background="@drawable/bg_ghost_rule"
+            android:layerType="software" />
+
+        <TextView
+            android:layout_width="@dimen/board_status_column"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/ghost_status"
+            android:textAppearance="@style/TextAppearance.NotesApp.Tag"
+            android:textColor="@color/perforation" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="14dp"
+        android:background="@color/hairline" />
+</LinearLayout>

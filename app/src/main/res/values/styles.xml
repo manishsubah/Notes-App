@@ -1,42 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="TextAppearance.NotesApp.Headline" parent="TextAppearance.Material3.HeadlineSmall">
-        <item name="android:textColor">@color/on_surface</item>
+    <!-- Type: one body size does the note work; labels are condensed tracked caps;
+         every figure is tabular so times and counts sit in columns. -->
+
+    <style name="TextAppearance.NotesApp.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:fontFamily">@font/barlow_semi_condensed_bold</item>
+        <item name="fontFamily">@font/barlow_semi_condensed_bold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textColor">@color/on_band</item>
     </style>
 
-    <style name="TextAppearance.NotesApp.Title" parent="TextAppearance.Material3.TitleMedium">
-        <item name="android:textColor">@color/on_surface</item>
-        <item name="android:textStyle">bold</item>
+    <style name="TextAppearance.NotesApp.Note" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:lineSpacingExtra">2sp</item>
     </style>
 
-    <style name="TextAppearance.NotesApp.Body" parent="TextAppearance.Material3.BodyLarge">
-        <item name="android:textColor">@color/on_surface</item>
+    <style name="TextAppearance.NotesApp.Label" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:fontFamily">@font/barlow_semi_condensed_semibold</item>
+        <item name="fontFamily">@font/barlow_semi_condensed_semibold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+        <item name="android:textColor">@color/label</item>
     </style>
 
-    <style name="TextAppearance.NotesApp.Label" parent="TextAppearance.Material3.BodyMedium">
-        <item name="android:textColor">@color/on_surface_variant</item>
+    <style name="TextAppearance.NotesApp.Figure" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:fontFamily">@font/barlow_semi_condensed_medium</item>
+        <item name="fontFamily">@font/barlow_semi_condensed_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:lineSpacingMultiplier">0.95</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+        <item name="android:textColor">@color/label</item>
     </style>
 
-    <style name="Widget.NotesApp.Toolbar" parent="Widget.Material3.Toolbar">
-        <item name="android:background">@color/surface</item>
-        <item name="titleTextAppearance">@style/TextAppearance.NotesApp.Title</item>
-        <item name="titleTextColor">@color/on_surface</item>
+    <style name="TextAppearance.NotesApp.Tag" parent="TextAppearance.NotesApp.Label">
+        <item name="android:fontFamily">@font/barlow_semi_condensed_bold</item>
+        <item name="fontFamily">@font/barlow_semi_condensed_bold</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:letterSpacing">0.06</item>
     </style>
 
-    <style name="Widget.NotesApp.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
-        <item name="boxCornerRadiusTopStart">@dimen/corner_input</item>
-        <item name="boxCornerRadiusTopEnd">@dimen/corner_input</item>
-        <item name="boxCornerRadiusBottomStart">@dimen/corner_input</item>
-        <item name="boxCornerRadiusBottomEnd">@dimen/corner_input</item>
+    <style name="TextAppearance.NotesApp.Stub" parent="TextAppearance.NotesApp.Label">
+        <item name="android:fontFamily">@font/barlow_semi_condensed_bold</item>
+        <item name="fontFamily">@font/barlow_semi_condensed_bold</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textColor">@color/on_signal</item>
     </style>
 
-    <style name="Widget.NotesApp.NoteCard" parent="Widget.Material3.CardView.Elevated">
-        <item name="cardCornerRadius">@dimen/corner_card</item>
-        <item name="cardElevation">2dp</item>
-        <item name="strokeColor">@color/note_card_stroke</item>
-        <item name="strokeWidth">1dp</item>
-        <item name="cardBackgroundColor">@color/note_card</item>
+    <!-- Row action buttons inside an expanded board row -->
+    <style name="Widget.NotesApp.RowAction" parent="Widget.Material3.Button.TextButton">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">@dimen/touch_target</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.NotesApp.Label</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="iconTint">@color/ink</item>
+        <item name="iconSize">18dp</item>
+        <item name="iconPadding">6dp</item>
+        <item name="rippleColor">@color/hairline</item>
+    </style>
+
+    <style name="Widget.NotesApp.TextAction" parent="Widget.Material3.Button.TextButton">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">@dimen/touch_target</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.NotesApp.Label</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="rippleColor">@color/hairline</item>
+    </style>
+
+    <style name="Widget.NotesApp.Snackbar" parent="Widget.Material3.Snackbar">
+        <item name="shapeAppearance">@style/ShapeAppearance.NotesApp.Small</item>
+    </style>
+
+    <style name="ShapeAppearance.NotesApp.Small" parent="ShapeAppearance.Material3.Corner.Small">
+        <item name="cornerSize">@dimen/corner_tag</item>
     </style>
 
 </resources>
