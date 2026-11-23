@@ -38,7 +38,7 @@ None are binding. The current name "NotesApp", its in-app title "My Notes" and t
 
 ## Evidence on Hand
 
-- Screenshots and screen recordings of an earlier version are in `screenshots/` (`000168.png`, `000169.png`, two `.mp4` files).
+- Screenshots of the current app, taken on an emulator with demo notes, are in `screenshots/` and shown in the README.
 - There are no users, reviews, metrics or store listing. Do not invent any.
 
 ## Product Principles
